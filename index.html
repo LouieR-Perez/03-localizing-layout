@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global Technology Summit</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
+<body dir="rtl">
   <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#"><i class="fas fa-globe"></i> Global Technology Summit</a>
+  <div class="container-fluid">
+  <a class="navbar-brand" href="#"><i class="fas fa-globe"></i> Global Technology Summit</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
@@ -39,56 +39,91 @@
   
   <div class="container my-5">
     <div class="row mb-4">
-      <div class="col-12 bg-light p-5 rounded">
-        <h1 class="text-left">Welcome to Global Technology Summit</h1>
-        <p class="text-left">Join top innovators, industry leaders, and experts shaping the future of technology.</p>
-        <button class="btn btn-primary">Get Your Ticket</button>
+      <div class="col-12">
+        <div id="summitCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#summitCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#summitCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#summitCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#summitCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner rounded bg-light p-5">
+            <div class="carousel-item active">
+              <h1 class="text-end">Welcome to Global Technology Summit</h1>
+              <p class="text-end">Join top innovators, industry leaders, and experts shaping the future of technology.</p>
+              <button class="btn btn-primary">Get Your Ticket</button>
+            </div>
+            <div class="carousel-item">
+              <h1 class="text-end">AI & Automation</h1>
+              <p class="text-end">Explore how artificial intelligence and automation are revolutionizing industries worldwide.</p>
+              <button class="btn btn-secondary">Learn More</button>
+            </div>
+            <div class="carousel-item">
+              <h1 class="text-end">Cybersecurity Trends</h1>
+              <p class="text-end">Stay ahead with the latest in cybersecurity, ethical hacking, and digital defense strategies.</p>
+              <button class="btn btn-secondary">See Agenda</button>
+            </div>
+            <div class="carousel-item">
+              <h1 class="text-end">Global Networking</h1>
+              <p class="text-end">Connect with leaders, founders, and innovators to exchange ideas and opportunities.</p>
+              <button class="btn btn-secondary">Register Now</button>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#summitCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#summitCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
-        <div class="card p-3">
+  <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+  <div class="card p-3 text-end">
           <h2>The Future of AI & Automation</h2>
           <p>How artificial intelligence is transforming industries, from automation to creative applications.</p>
           <button class="btn btn-secondary mt-auto">View Details</button>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
-        <div class="card p-3">
+  <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+  <div class="card p-3 text-end">
           <h2>Cybersecurity & Ethical Hacking</h2>
           <p>Experts reveal the latest cybersecurity trends, threats, and defense strategies in a digital world.</p>
           <button class="btn btn-secondary mt-auto">View Details</button>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
-        <div class="card p-3">
+  <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+  <div class="card p-3 text-end">
           <h2>Global Networking & Collaboration</h2>
           <p>Connect with industry leaders, founders, and innovators to exchange ideas and opportunities.</p>
           <button class="btn btn-secondary mt-auto">Register</button>
         </div>        
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
-        <div class="card p-3">
+  <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+  <div class="card p-3 text-end">
           <h2>Breakthroughs in Health Tech</h2>
           <p>How AI, biotech, and wearables are revolutionizing personalized medicine and patient care.</p>
           <button class="btn btn-secondary mt-auto">View Details</button>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
-        <div class="card p-3">
+  <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+  <div class="card p-3 text-end">
           <h2>Startup Pitch & Investor Panel</h2>
           <p>Early-stage startups compete for funding and mentorship in front of top industry investors.</p>
           <button class="btn btn-secondary mt-auto">Pitch Your Idea</button>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
-        <div class="card p-3">
+  <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch">
+  <div class="card p-3 text-end">
           <h2>Expanding Tech for Social Good</h2>
           <p>How developers and organizations are using technology to solve global challenges.</p>
           <button class="btn btn-secondary mt-auto">Register</button>
@@ -98,13 +133,86 @@
 
     <div class="row mt-5">
       <div class="col-12 text-center footer p-3 rounded">
-        <p>&copy; 2025 Global Tech Summit. All rights reserved.</p>
+        <p class="text-end">&copy; 2025 Global Tech Summit. All rights reserved.</p>
       </div>
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6VKHr8zWvZt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknL" crossorigin="anonymous"></script>
+
+  <script>
+    // List of RTL language codes
+    const rtlLangs = ['ar', 'he', 'fa', 'ur', 'ps', 'dv', 'yi', 'ku', 'ug', 'sd'];
+
+    // Add both LTR and RTL Bootstrap CSS, but only one is enabled at a time
+    (function addBootstrapLTR() {
+      if (!document.getElementById('bootstrap-ltr')) {
+        const ltr = document.createElement('link');
+        ltr.rel = 'stylesheet';
+        ltr.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css';
+        ltr.id = 'bootstrap-ltr';
+        ltr.disabled = true;
+        document.head.insertBefore(ltr, document.querySelector('link[rel="stylesheet"]'));
+      }
+    })();
+
+    function setDirection(dir) {
+      document.documentElement.setAttribute('dir', dir);
+      document.body.setAttribute('dir', dir);
+      // Enable/disable Bootstrap CSS
+      const ltr = document.getElementById('bootstrap-ltr');
+      const rtl = document.querySelector('link[href*="bootstrap.rtl.min.css"]');
+      if (dir === 'rtl') {
+        if (ltr) ltr.disabled = true;
+        if (rtl) rtl.disabled = false;
+      } else {
+        if (ltr) ltr.disabled = false;
+        if (rtl) rtl.disabled = true;
+      }
+    }
+
+    function getCurrentLang() {
+      // Google Translate sets a cookie and/or changes html[lang]
+      // Try to detect from <html lang> or <body lang>
+      let lang = document.documentElement.getAttribute('lang') || document.body.getAttribute('lang') || '';
+      // Google Translate may set a class like 'translated-ltr' or 'translated-rtl' on <html>
+      if (!lang && document.documentElement.className.match(/translated-([a-z]{2})/)) {
+        lang = document.documentElement.className.match(/translated-([a-z]{2})/)[1];
+      }
+      // Google Translate may also set a cookie 'googtrans=/en/ar'
+      const match = document.cookie.match(/googtrans=\/[^/]+\/([^;]+)/);
+      if (match) lang = match[1];
+      return lang.toLowerCase().split('-')[0];
+    }
+
+    function updateDirectionByLang() {
+      const lang = getCurrentLang();
+      if (rtlLangs.includes(lang)) {
+        setDirection('rtl');
+      } else {
+        setDirection('ltr');
+      }
+    }
+
+    // Observe DOM changes for Google Translate
+    const observer = new MutationObserver(() => {
+      updateDirectionByLang();
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang', 'class'] });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['lang', 'class'] });
+
+    // Also poll for cookie changes (Google Translate may not trigger DOM mutation)
+    let lastLang = getCurrentLang();
+    setInterval(() => {
+      const currentLang = getCurrentLang();
+      if (currentLang !== lastLang) {
+        lastLang = currentLang;
+        updateDirectionByLang();
+      }
+    }, 1000);
+
+    // Initial direction set
+    updateDirectionByLang();
+  </script>
 </body>
 </html>
